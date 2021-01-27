@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home | Devon Smallwood</title>
+        <link href="../Styles/Main.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="backbar"></div>
+        <div id="progressbar"></div>
+        <script>
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop(), 
+                dh = $(document).height(),
+                wh = $(window).height();
+                scrollPercent = (scroll / (dh - wh)) * 100;
+                $('#progressbar').css('width', scrollPercent + '%');
+            });
+        </script>
+        <script>
+        </script>
+        <a href="javascript:void(0)" id="arrow" title="SHOW / HIDE MENU" class="arrow-inactive"><img src="../Images/arrow_icon.png"></a>
+        <script>$("#arrow").click(function() {
+            $("#arrow").toggleClass('arrow-active arrow-inactive');
+            $("#navbar").toggleClass('navbar-active navbar-inactive');
+            document.getElementById("arrow").blur();
+            if($("#navbar").hasClass('navbar-active')) {
+                $('#art-link').attr( 'tabIndex', 0 );
+                $('#games-link').attr( 'tabIndex', 0 );
+                $('#media-link').attr( 'tabIndex', 0 );
+                $('#tools-link').attr( 'tabIndex', 0 );
+                $('#sites-link').attr( 'tabIndex', 0 );
+            }
+            else {
+                $('#art-link').attr( 'tabIndex', -1 );
+                $('#games-link').attr( 'tabIndex', -1 );
+                $('#media-link').attr( 'tabIndex', -1 );
+                $('#tools-link').attr( 'tabIndex', -1 );
+                $('#sites-link').attr( 'tabIndex', -1 );
+            }
+        });</script>
+        <a id="home-icon" title="HOME"><img src="../Images/home_icon.png"></a>
+        <a href="#" id="toparrow" title="BACK TO TOP"><img src="../Images/arrow_icon.png"></a>
+        <script>$(window).scroll(function() {
+            if($(this).scrollTop() > 0) {
+                $('#toparrow').fadeIn();
+            }
+            else {
+                $('#toparrow').fadeOut();
+            }
+        });
+        </script>
+        <script>$("#toparrow").click(function() {
+            document.getElementById("toparrow").blur();
+        });</script>
+        <nav id="navbar" class="navbar-inactive">
+            <ul id="navbar-nav">
+                <li class="nav-item"><a id="art-link" href="art.html" tabindex="-1" class="nav-link" title="ART"><img src="../Images/art_icon.png"></a></li>
+                <li class="nav-item"><a id="games-link" href="games.html" tabindex="-1" class="nav-link" title="GAMES"><img src="../Images/games_icon.png"></a></li>
+                <li class="nav-item"><a id="media-link" href="media.html" tabindex="-1" class="nav-link" title="MEDIA"><img src="../Images/media_icon.png"></a></li>
+                <li class="nav-item"><a id="tools-link" href="tools.html" tabindex="-1" class="nav-link" title="TOOLS"><img src="../Images/tools_icon.png"></a></li>
+                <li class="nav-item"><a id="sites-link" href="sites.html" tabindex="-1" class="nav-link" title="SITES"><img src="../Images/sites_icon.png"></a></li>
+            </ul>
+        </nav>
+        
+        <div id="hidenavzone">
+            <h1 id="title">DEVON SMALLWOOD</h1>
+
+            <div id="mainpage">
+                <p id="subtitle">designer | developer | writer</p>
+                <nav id="tile-nav">
+                    <ul id="tile-ul">
+                        <li class="nav-tile"><a id="art-tile" href="art.html" tabindex="0" class="tile-link" title="ART"><img src="../Images/art_icon.png"></a></li>
+                        <li class="nav-tile"><a id="games-tile" href="games.html" tabindex="0" class="tile-link" title="GAMES"><img src="../Images/games_icon.png"></a></li>
+                        <li class="nav-tile"><a id="media-tile" href="media.html" tabindex="0" class="tile-link" title="MEDIA"><img src="../Images/media_icon.png"></a></li>
+                        <li class="nav-tile"><a id="tools-tile" href="tools.html" tabindex="0" class="tile-link" title="TOOLS"><img src="../Images/tools_icon.png"></a></li>
+                        <li class="nav-tile"><a id="sites-tile" href="sites.html" tabindex="0" class="tile-link" title="SITES"><img src="../Images/sites_icon.png"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <script>
+            $('#hidenavzone').click(function(event) {
+                if ($('#navbar').hasClass('navbar-active')) {
+                    $('#arrow').click();
+                }
+            });
+        </script>
+    </body>
+</html>
