@@ -105,6 +105,9 @@ body::-webkit-scrollbar {
     margin: 1.5rem;
     filter: brightness(50%);
     transition: 600ms;
+}
+
+#arrow img {
     width: 1rem;
 }
 
@@ -131,6 +134,9 @@ body::-webkit-scrollbar {
     margin: 1.5rem;
     filter: brightness(50%);
     transition: 600ms;
+}
+
+#home-icon img {
     width: 1rem;
 }
 
@@ -140,7 +146,6 @@ body::-webkit-scrollbar {
 }
 
 #toparrow {
-    width: 1rem;
     bottom: 0;
     right: 0;
     position: fixed;
@@ -151,6 +156,10 @@ body::-webkit-scrollbar {
     transform: rotate(-90deg);
     animation: icon-unhover forwards ease 600ms;
     display: none;
+}
+
+#toparrow img {
+    width: 1rem;
 }
 
 #toparrow:hover {
