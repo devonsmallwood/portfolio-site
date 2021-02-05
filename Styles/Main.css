@@ -105,6 +105,7 @@ body::-webkit-scrollbar {
     margin: 1.5rem;
     filter: brightness(50%);
     transition: 600ms;
+    width: 1rem;
 }
 
 #arrow:hover {
@@ -130,6 +131,7 @@ body::-webkit-scrollbar {
     margin: 1.5rem;
     filter: brightness(50%);
     transition: 600ms;
+    width: 1rem;
 }
 
 #home-icon:hover {
@@ -138,6 +140,7 @@ body::-webkit-scrollbar {
 }
 
 #toparrow {
+    width: 1rem;
     bottom: 0;
     right: 0;
     position: fixed;
