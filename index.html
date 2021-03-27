@@ -40,6 +40,7 @@
                 $('#sites-link').attr( 'tabIndex', -1 );
             }
         });</script>
+        <div id="wholepage">
         <a id="home-icon" title="HOME"><img src="../Images/home_icon.png"></a>
         <a href="#" id="toparrow" title="BACK TO TOP"><img src="../Images/arrow_icon.png"></a>
         <script>$(window).scroll(function() {
@@ -64,7 +65,7 @@
             </ul>
         </nav>
         
-        <div id="wholepage">
+        <div>
             <div id="textzone">
                 <h1 id="title">DEVON SMALLWOOD</h1>
 
@@ -82,9 +83,10 @@
                 </div>
             </div>
         </div>
+    </div>
 
         <script>
-            $('body').click(function(event) {
+            $('#wholepage').click(function(event) {
                 if ($('#navbar').hasClass('navbar-active')) {
                     $('#arrow').click();
                 }
