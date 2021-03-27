@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
-#hidenavzone {
+#textzone {
     margin: 5rem;
     padding: 4rem;
     background: rgb(225,200,225);
