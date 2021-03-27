@@ -12,11 +12,6 @@ html {
     user-select: none; /* Standard */
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-
 a {
     outline: none;
 }
