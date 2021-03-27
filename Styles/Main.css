@@ -54,6 +54,11 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
+#wholepage {
+    top: 0;
+    left: 0;
+}
+
 #textzone {
     margin: 5rem;
     padding: 4rem;
