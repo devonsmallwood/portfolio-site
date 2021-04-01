@@ -443,6 +443,22 @@ body::-webkit-scrollbar {
     #mainpage {
         padding: 0;
     }
+
+    .nav-link img {
+        width: 2rem;
+    }
+
+    #home-icon img {
+        width: 2rem;
+    }
+
+    #arrow img {
+        width: 2rem;
+    }
+
+    #toparrow img {
+        width: 2rem;
+    }
 }
 
 @media screen and (max-width: 625px) {
@@ -452,6 +468,22 @@ body::-webkit-scrollbar {
 
     .tile-link {
         padding: 3rem;
+    }
+
+    .nav-link img {
+        width: 2rem;
+    }
+
+    #home-icon img {
+        width: 2rem;
+    }
+
+    #arrow img {
+        width: 2rem;
+    }
+
+    #toparrow img {
+        width: 2rem;
     }
 }
 
