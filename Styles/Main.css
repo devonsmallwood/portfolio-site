@@ -141,8 +141,7 @@ body::-webkit-scrollbar {
     top: 0;
     position: fixed;
     z-index: 3;
-    padding: 0.5rem;
-    margin: 1.5rem;
+    padding: 2rem;
     filter: brightness(50%);
     transition: 600ms;
 }
@@ -170,8 +169,7 @@ body::-webkit-scrollbar {
     right: 0;
     position: fixed;
     z-index: 3;
-    padding: 0.5rem;
-    margin: 1.5rem;
+    padding: 2rem;
     filter: brightness(50%);
     transition: 600ms;
 }
@@ -190,8 +188,7 @@ body::-webkit-scrollbar {
     right: 0;
     position: fixed;
     z-index: 3;
-    padding: 0.5rem;
-    margin: 1.5rem;
+    padding: 2rem;
     filter: brightness(50%);
     transform: rotate(-90deg);
     animation: icon-unhover forwards ease 600ms;
@@ -262,25 +259,25 @@ body::-webkit-scrollbar {
     height: 5rem;
     filter: brightness(50%);
     transition: 600ms;
+    padding: 2rem;
 }
 
 .nav-link:hover {
     filter: brightness(100%);
-    /*background: rgb(35, 0, 35);*/
+    background: rgb(35, 0, 35);
     cursor: pointer;    
 }
 
 .nav-link:active {
-    /*background: rgb(35, 0, 35);*/
+    background: rgb(35, 0, 35);
 }
 
 .nav-link:focus {
-    /*background: rgb(35, 0, 35);*/
+    background: rgb(35, 0, 35);
 }
 
 .nav-link img {
     width: 1rem;
-    margin: 0 1.5rem;
 }
 
 .nav-item {
@@ -436,22 +433,6 @@ body::-webkit-scrollbar {
     .nav-tile img {
         padding: 10rem 3.5rem;
     }
-
-    .nav-link img {
-        width: 2rem;
-    }
-
-    #home-icon img {
-        width: 2rem;
-    }
-
-    #arrow img {
-        width: 2rem;
-    }
-
-    #toparrow img {
-        width: 2rem;
-    }
 }
 
 @media screen and (max-width: 900px) {
@@ -461,22 +442,6 @@ body::-webkit-scrollbar {
 
     #mainpage {
         padding: 0;
-    }
-
-    .nav-link img {
-        width: 2rem;
-    }
-
-    #home-icon img {
-        width: 2rem;
-    }
-
-    #arrow img {
-        width: 2rem;
-    }
-
-    #toparrow img {
-        width: 2rem;
     }
 }
 
@@ -488,44 +453,11 @@ body::-webkit-scrollbar {
     .tile-link {
         padding: 3rem;
     }
-
-    .nav-link img {
-        width: 2rem;
-    }
-
-    #home-icon img {
-        width: 2rem;
-    }
-
-    #arrow img {
-        width: 2rem;
-    }
-
-    #toparrow img {
-        width: 2rem;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .nav-tile img {
         padding: 6rem 5rem;
-        width: 0.5rem;
-    }
-
-    .nav-link img {
-        width: 0.5rem;
-    }
-
-    #home-icon img {
-        width: 0.5rem;
-    }
-
-    #arrow img {
-        width: 0.5rem;
-    }
-
-    #toparrow img {
-        width: 0.5rem;
     }
 
     .tile-link {
