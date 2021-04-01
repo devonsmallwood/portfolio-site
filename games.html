@@ -22,6 +22,8 @@
         <script>$("#arrow").click(function() {
             $("#arrow").toggleClass('arrow-active arrow-inactive');
             $("#navbar").toggleClass('navbar-active navbar-inactive');
+            $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
+            $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
             document.getElementById("arrow").blur();
             if($("#navbar").hasClass('navbar-active')) {
                 $('#art-link').attr( 'tabIndex', 0 );
@@ -69,9 +71,13 @@
                 </div>
             </div>
         </div>
+        <div id="hidenavzonehider" class="hidenavzone-hidden">
+            <div id="hidenavzone" class="hidenavzone-inactive">
+            </div>
+        </div>
 
         <script>
-            $('#wholepage').click(function(event) {
+            $('#hidenavzone').click(function(event) {
                 if ($('#navbar').hasClass('navbar-active')) {
                     $('#arrow').click();
                 }
