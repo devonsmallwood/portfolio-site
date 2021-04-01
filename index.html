@@ -24,6 +24,7 @@
         <script>$("#arrow").click(function() {
             $("#arrow").toggleClass('arrow-active arrow-inactive');
             $("#navbar").toggleClass('navbar-active navbar-inactive');
+            $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
             document.getElementById("arrow").blur();
             if($("#navbar").hasClass('navbar-active')) {
                 $('#art-link').attr( 'tabIndex', 0 );
@@ -40,7 +41,6 @@
                 $('#sites-link').attr( 'tabIndex', -1 );
             }
         });</script>
-        <div id="wholepage">
         <a id="home-icon" title="HOME"><img src="./Images/home_icon.png"></a>
         <a href="#" id="toparrow" title="BACK TO TOP"><img src="./Images/arrow_icon.png"></a>
         <script>$(window).scroll(function() {
@@ -83,10 +83,11 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div id="hidenavzone" class="hidenavzone-inactive">
+        </div>
 
         <script>
-            $('#wholepage').click(function(event) {
+            $('#hidenavzone').click(function(event) {
                 if ($('#navbar').hasClass('navbar-active')) {
                     $('#arrow').click();
                 }
