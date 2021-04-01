@@ -6,7 +6,7 @@
         <link href="./Styles/Main.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body class="scroll-enable">
         <div id="backbar"></div>
         <div id="progressbar"></div>
         <script>
@@ -26,6 +26,7 @@
             $("#navbar").toggleClass('navbar-active navbar-inactive');
             $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
             $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
+            $("body").toggleClass('scroll-enable scroll-disable');
             document.getElementById("arrow").blur();
             if($("#navbar").hasClass('navbar-active')) {
                 $('#art-link').attr( 'tabIndex', 0 );

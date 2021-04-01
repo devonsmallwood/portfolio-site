@@ -76,7 +76,7 @@ body::-webkit-scrollbar {
 }
 
 #hidenavzone {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
 }
 
 #hidenavzonehider {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -110,6 +110,14 @@ body::-webkit-scrollbar {
     transition-delay: 600ms;
     height: 0;
     width: 0;
+}
+
+.scroll-enable {
+    overflow: auto;
+}
+
+.scroll-disable {
+    overflow: hidden;
 }
 
 #backbar {
