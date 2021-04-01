@@ -147,7 +147,7 @@ body::-webkit-scrollbar {
 }
 
 #arrow img {
-    width: 1rem;
+    width: 1.25rem;
 }
 
 #arrow:hover {
@@ -161,7 +161,7 @@ body::-webkit-scrollbar {
 
 .arrow-active {
     transform: rotate(180deg);
-    left: 5rem;
+    left: 6rem;
 }
 
 #home-icon {
@@ -175,7 +175,7 @@ body::-webkit-scrollbar {
 }
 
 #home-icon img {
-    width: 1rem;
+    width: 1.25rem;
 }
 
 #home-icon:hover {
@@ -196,7 +196,7 @@ body::-webkit-scrollbar {
 }
 
 #toparrow img {
-    width: 1rem;
+    width: 1.25rem;
 }
 
 #toparrow:hover {
@@ -223,7 +223,7 @@ body::-webkit-scrollbar {
 
 #navbar {
     height: 100vh;
-    width: 5rem;
+    width: 6rem;
     position: fixed;
     background-color:  black;
     z-index: 3;
@@ -232,7 +232,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar-inactive {
-    left: -5rem;
+    left: -6rem;
 }
 
 .navbar-active {
@@ -277,7 +277,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-link img {
-    width: 1rem;
+    width: 1.25rem;
 }
 
 .nav-item {
@@ -309,7 +309,7 @@ body::-webkit-scrollbar {
 }
 
 .tile-link img {
-    width: 1rem;
+    width: 1.25rem;
     padding: 10rem 7rem;
     transition: 600ms;
 }
