@@ -433,6 +433,22 @@ body::-webkit-scrollbar {
     .nav-tile img {
         padding: 10rem 3.5rem;
     }
+
+    .nav-link img {
+        width: 2rem;
+    }
+
+    #home-icon img {
+        width: 2rem;
+    }
+
+    #arrow img {
+        width: 2rem;
+    }
+
+    #toparrow img {
+        width: 2rem;
+    }
 }
 
 @media screen and (max-width: 900px) {
