@@ -67,6 +67,7 @@ body::-webkit-scrollbar {
 }
 
 .title {
+    font-size: 1.7rem;
     text-align: center;
     padding-bottom: 2rem;
 }
@@ -77,6 +78,7 @@ body::-webkit-scrollbar {
 }
 
 #subtitle {
+    font-size: 1.2rem;
     text-align: center;
     padding-bottom: 2rem;
 }
