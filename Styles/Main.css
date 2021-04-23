@@ -338,35 +338,35 @@ body::-webkit-scrollbar {
 }
 
 #games-tile {
-    background: url(../Images/games_img.jpg);
-    background-size: 100%;
+    background: url(../Images/possessor_screenshot.png);
+    background-size: 130%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #games-tile:hover {
-    background-size: 120%;
+    background-size: 160%;
 }
 
 #media-tile {
-    background: url(../Images/media_img.jpg!d);
-    background-size: 100%;
+    background: url(../Images/hymnprismlivedemo_screenshot.png);
+    background-size: 130%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #media-tile:hover {
-    background-size: 120%;
+    background-size: 160%;
 }
 
 #tools-tile {
-    background: url(../Images/tools_img.jpg!d);
-    background-size: 100%;
+    background: url(../Images/hymnprism_screenshot.png);
+    background-size: 130%;
     background-position: center;
 }
 
 #tools-tile:hover {
-    background-size: 120%;
+    background-size: 160%;
 }
 
 #sites-tile {
