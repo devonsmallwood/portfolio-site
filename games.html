@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Games | Devon Smallwood</title>
+        <link rel="icon" href="./Images/games_icon.png">
         <link href="./Styles/Main.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
@@ -27,16 +28,12 @@
             $("body").toggleClass('scroll-enable scroll-disable');
             document.getElementById("arrow").blur();
             if($("#navbar").hasClass('navbar-active')) {
-                $('#art-link').attr( 'tabIndex', 0 );
                 $('#media-link').attr( 'tabIndex', 0 );
                 $('#tools-link').attr( 'tabIndex', 0 );
-                $('#sites-link').attr( 'tabIndex', 0 );
             }
             else {
-                $('#art-link').attr( 'tabIndex', -1 );
                 $('#media-link').attr( 'tabIndex', -1 );
                 $('#tools-link').attr( 'tabIndex', -1 );
-                $('#sites-link').attr( 'tabIndex', -1 );
             }
         });</script>
         <a href="index.html" id="home-icon" title="HOME"><img src="./Images/home_icon.png"></a>
@@ -55,11 +52,9 @@
         });</script>
         <nav id="navbar" class="navbar-inactive">
             <ul id="navbar-nav">
-                <li class="nav-item"><a id="art-link" href="art.html" tabindex="0" class="nav-link" title="ART"><img src="./Images/art_icon.png"></a></li>
                 <li class="nav-item"><a class="nav-link" title="GAMES"><img src="./Images/games_icon.png"></a></li>
                 <li class="nav-item"><a id="media-link" href="media.html" tabindex="0" class="nav-link" title="MEDIA"><img src="./Images/media_icon.png"></a></li>
                 <li class="nav-item"><a id="tools-link" href="tools.html" tabindex="0" class="nav-link" title="TOOLS"><img src="./Images/tools_icon.png"></a></li>
-                <li class="nav-item"><a id="sites-link" href="sites.html" tabindex="0" class="nav-link" title="sites"><img src="./Images/sites_icon.png"></a></li>
             </ul>
         </nav>
         
