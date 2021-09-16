@@ -394,7 +394,7 @@ body::-webkit-scrollbar {
     position: relative;
     width: 21rem;
     height: 21rem;
-    background: white;
+    background: var(--primary-color);
     margin: 1rem;
     transition: 600ms;
 }
