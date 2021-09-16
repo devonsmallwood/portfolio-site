@@ -2,6 +2,7 @@
 
 html {
     --background-color: rgba(205,175,205, 0.9);
+    --highlight-color: rgba(255,255,255,0.25);
     --text-color: rgb(35, 0, 35);
     --primary-color: rgb(135, 0, 135);
     font-size: 16px;
@@ -73,6 +74,7 @@ body::-webkit-scrollbar {
     padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--text-color);
+    background-color: var(--highlight-color);
 }
 
 .title {
@@ -103,6 +105,8 @@ body::-webkit-scrollbar {
     font-size: 1.2rem;
     text-align: center;
     color: var(--text-color);
+    background-color: var(--highlight-color);
+    padding-bottom: 1rem;
 }
 
 .maintext {
@@ -181,6 +185,7 @@ body::-webkit-scrollbar {
     transition: 600ms;
     color: var(--primary-color);
     text-decoration: none;
+    background-color: var(--highlight-color);
 }
 
 #arrow img {
@@ -210,6 +215,7 @@ body::-webkit-scrollbar {
     transition: 600ms;
     text-decoration: none;
     color: var(--primary-color);
+    background-color: var(--highlight-color);
 }
 
 #home-icon img {
@@ -232,6 +238,7 @@ body::-webkit-scrollbar {
     display: none;
     color: var(--primary-color);
     text-decoration: none;
+    background-color: var(--highlight-color);
 }
 
 #toparrow img {
@@ -499,6 +506,10 @@ body::-webkit-scrollbar {
 
     .contact-grid p {
         margin-bottom: 2rem;
+    }
+
+    html {
+        font-size: 1.5rem;
     }
 }
 
