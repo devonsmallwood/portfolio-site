@@ -433,11 +433,16 @@ body::-webkit-scrollbar {
     height: 23rem;
 }
 
+.filtered-items .item-tile:active {
+    width: 23rem;
+    height: 23rem;
+}
+
 .filtered-items .item-tile:hover > .tile-description {
     filter: opacity(1);
 }
 
-.filtered-items .item-tile:focus > .tile-description {
+.filtered-items .item-tile:active > .tile-description {
     filter: opacity(1);
 }
 
