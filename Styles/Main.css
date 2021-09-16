@@ -383,10 +383,10 @@ body::-webkit-scrollbar {
 
 .filtered-items .item-tile {
     position: relative;
-    width: 23rem;
-    height: 23rem;
+    width: 20rem;
+    height: 20rem;
     background: var(--primary-color);
-    margin: 0.5rem;
+    margin: 1rem;
     transition: 600ms;
 }
 
@@ -422,6 +422,20 @@ body::-webkit-scrollbar {
     filter: opacity(0);
     transition: 600ms;
     background: rgba(0,0,0,0.75);
+    overflow-y: scroll;
+    height: 6rem;
+}
+
+.tile-description::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+.tile-description::-webkit-scrollbar-track {
+    background: white;
+}
+
+.tile-description::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
 }
 
 .filtered-items .item-tile:hover > .tile-description {
