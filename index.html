@@ -30,14 +30,16 @@
             $("body").toggleClass('scroll-enable scroll-disable');
             document.getElementById("arrow").blur();
             if($("#navbar").hasClass('navbar-active')) {
-                $('#games-link').attr( 'tabIndex', 0 );
-                $('#media-link').attr( 'tabIndex', 0 );
-                $('#tools-link').attr( 'tabIndex', 0 );
+                $('#about-link').attr( 'tabIndex', 0 );
+                $('#work-link').attr( 'tabIndex', 0 );
+                $('#exp-link').attr( 'tabIndex', 0 );
+                $('#contact-link').attr( 'tabIndex', 0 );
             }
             else {
-                $('#games-link').attr( 'tabIndex', -1 );
-                $('#media-link').attr( 'tabIndex', -1 );
-                $('#tools-link').attr( 'tabIndex', -1 );
+                $('#about-link').attr( 'tabIndex', -1 );
+                $('#work-link').attr( 'tabIndex', -1 );
+                $('#exp-link').attr( 'tabIndex', -1 );
+                $('#contact-link').attr( 'tabIndex', -1 );
             }
         });</script>
         <a href="#" id="home-icon" title="home">home</a>
