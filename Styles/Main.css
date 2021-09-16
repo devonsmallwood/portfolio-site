@@ -185,7 +185,7 @@ body::-webkit-scrollbar {
     padding: 2rem;
     filter: brightness(10%);
     transition: 600ms;
-    color: var(--primary-color);
+    color: var(--title-color);
     text-decoration: none;
     background-color: var(--highlight-color);
 }
@@ -216,7 +216,7 @@ body::-webkit-scrollbar {
     filter: brightness(10%);
     transition: 600ms;
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--title-color);
     background-color: var(--highlight-color);
 }
 
@@ -238,7 +238,7 @@ body::-webkit-scrollbar {
     filter: brightness(10%);
     animation: icon-unhover forwards ease 600ms;
     display: none;
-    color: var(--primary-color);
+    color: var(--title-color);
     text-decoration: none;
     background-color: var(--highlight-color);
 }
@@ -256,13 +256,13 @@ body::-webkit-scrollbar {
         filter: brightness(100%);
     }
     100% {
-        filter: brightness(50%);
+        filter: brightness(10%);
     }
 }
 
 @keyframes icon-hover {
     0% {
-        filter: brightness(50%);
+        filter: brightness(10%);
     }
     100% {
         filter: brightness(100%);
