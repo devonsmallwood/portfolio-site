@@ -21,14 +21,14 @@
         </script>
         <script>
         </script>
-        <a href="javascript:void(0)" id="arrow" title="menu" class="arrow-inactive">menu</a>
-        <script>$("#arrow").click(function() {
-            $("#arrow").toggleClass('arrow-active arrow-inactive');
+        <a href="javascript:void(0)" id="menu-btn" title="menu" class="menu-btn-inactive">menu</a>
+        <script>$("#menu-btn").click(function() {
+            $("#menu-btn").toggleClass('menu-btn-active menu-btn-inactive');
             $("#navbar").toggleClass('navbar-active navbar-inactive');
             $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
             $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
             $("body").toggleClass('scroll-enable scroll-disable');
-            document.getElementById("arrow").blur();
+            document.getElementById("menu-btn").blur();
             if($("#navbar").hasClass('navbar-active')) {
                 $('#about-link').attr( 'tabIndex', 0 );
                 $('#work-link').attr( 'tabIndex', 0 );
@@ -42,19 +42,19 @@
                 $('#contact-link').attr( 'tabIndex', -1 );
             }
         });</script>
-        <a href="index.html" id="home-icon" title="home">home</a>
-        <a href="#" id="toparrow" title="back to top">back to top</a>
+        <a href="index.html" id="home-btn" title="home">home</a>
+        <a href="#" id="top-btn" title="back to top">back to top</a>
         <script>$(window).scroll(function() {
             if($(this).scrollTop() > 0) {
-                $('#toparrow').fadeIn();
+                $('#top-btn').fadeIn();
             }
             else {
-                $('#toparrow').fadeOut();
+                $('#top-btn').fadeOut();
             }
         });
         </script>
-        <script>$("#toparrow").click(function() {
-            document.getElementById("toparrow").blur();
+        <script>$("#top-btn").click(function() {
+            document.getElementById("top-btn").blur();
         });</script>
         <nav id="navbar" class="navbar-inactive">
             <ul id="navbar-nav">
@@ -97,7 +97,7 @@
         <script>
             $('#hidenavzone').click(function(event) {
                 if ($('#navbar').hasClass('navbar-active')) {
-                    $('#arrow').click();
+                    $('#menu-btn').click();
                 }
             });
         </script>
