@@ -188,6 +188,8 @@ body::-webkit-scrollbar {
     color: var(--title-color);
     text-decoration: none;
     background-color: var(--highlight-color);
+    border-end-end-radius: 2rem;
+
 }
 
 #arrow img {
@@ -218,6 +220,7 @@ body::-webkit-scrollbar {
     text-decoration: none;
     color: var(--title-color);
     background-color: var(--highlight-color);
+    border-end-start-radius: 2rem;
 }
 
 #home-icon img {
@@ -241,6 +244,8 @@ body::-webkit-scrollbar {
     color: var(--title-color);
     text-decoration: none;
     background-color: var(--highlight-color);
+    border-start-start-radius: 2rem;
+
 }
 
 #toparrow img {
