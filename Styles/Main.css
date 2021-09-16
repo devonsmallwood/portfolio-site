@@ -97,6 +97,11 @@ body::-webkit-scrollbar {
     text-align: center;
 }
 
+.exp-grid {
+    display: grid;
+    grid-template-columns: calc(100%/2) 1fr;
+}
+
 #img-me {
     width: 15rem;
     border-radius: 100%;
@@ -457,12 +462,11 @@ body::-webkit-scrollbar {
     #tile-ul {
         grid-template-columns: calc(100% / 2) 1fr;
     }
+}
+
+@media screen and (max-width: 1600px) {
     .about-grid {
-        display: block;
-        text-align: center;
-    }
-    .about-grid img {
-        margin-bottom: 2rem;
+        grid-template-columns: calc(100% / 3) 1fr;
     }
 }
 
@@ -470,6 +474,10 @@ body::-webkit-scrollbar {
     #tile-ul {
         display: block;
         text-align: center;
+    }
+
+    .about-grid {
+        grid-template-columns: calc(100% / 2) 1fr;
     }
 }
 
@@ -522,6 +530,18 @@ body::-webkit-scrollbar {
 @media screen and (max-width: 1200px) {
     html {
         font-size: 1.5rem;
+    }
+
+    .exp-grid {
+        display: block;
+    }
+
+    .about-grid {
+        display: block;
+        text-align: center;
+    }
+    .about-grid img {
+        margin-bottom: 2rem;
     }
 }
 
