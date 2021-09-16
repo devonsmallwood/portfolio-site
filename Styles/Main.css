@@ -491,6 +491,12 @@ body::-webkit-scrollbar {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 1.5rem;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .nav-tile img {
         padding: 10rem 0;
@@ -506,10 +512,6 @@ body::-webkit-scrollbar {
 
     .contact-grid p {
         margin-bottom: 2rem;
-    }
-
-    html {
-        font-size: 1.5rem;
     }
 }
 
