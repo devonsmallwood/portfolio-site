@@ -437,6 +437,10 @@ body::-webkit-scrollbar {
     filter: opacity(1);
 }
 
+.filtered-items .item-tile:focus > .tile-description {
+    filter: opacity(1);
+}
+
 #possessor-tile {
     background: url(../Images/possessor_screenshot.png);
     background-size: cover;
@@ -449,99 +453,6 @@ body::-webkit-scrollbar {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-#tile-ul {
-    display: grid;
-    grid-template-columns: calc(100% / 2) 1fr;
-    justify-content: center;
-}
-
-.tile-link {
-    display: inline;
-    align-items: center;
-    height: 5rem;
-    transition: 600ms;
-    padding: 7rem 5rem;
-    border-style: solid;
-    border-width: 5px;
-    border-color:  var(--text-color);
-    margin: 0 3rem;
-    filter: brightness(50%);
-}
-
-.tile-link:hover {
-    filter: brightness(100%);
-    cursor: pointer;
-}
-
-.tile-link img {
-    width: 1.25rem;
-    padding: 7rem;
-    transition: 600ms;
-}
-
-.nav-tile {
-    display: block;
-}
-
-#art-tile {
-    background: url(../Images/art_img.jpg!d);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#art-tile:hover {
-    background-size: 120%;
-}
-
-#games-tile {
-    background: url(../Images/possessor_screenshot.png);
-    background-size: 130%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#games-tile:hover {
-    background-size: 160%;
-}
-
-#media-tile {
-    background: url(../Images/hymnprismlivedemo_screenshot.png);
-    background-size: 130%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#media-tile:hover {
-    background-size: 160%;
-}
-
-#tools-tile {
-    background: url(../Images/hymnprism_screenshot.png);
-    background-size: 130%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#tools-tile:hover {
-    background-size: 160%;
-}
-
-#sites-tile {
-    background: url(../Images/sites_img.jpg!d);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-#sites-tile:hover {
-    background-size: 120%;
-}
-
-#tile-nav {
-    padding-bottom: 6rem;
 }
 
 .btn-link {
@@ -562,12 +473,6 @@ body::-webkit-scrollbar {
     color: var(--title-color);
 }
 
-@media screen and (max-width: 1800px) {
-    #tile-ul {
-        grid-template-columns: calc(100% / 2) 1fr;
-    }
-}
-
 @media screen and (max-width: 1600px) {
     .about-grid {
         grid-template-columns: calc(100% / 3) 1fr;
@@ -575,59 +480,8 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1400px) {
-    #tile-ul {
-        display: block;
-        text-align: center;
-    }
-
     .about-grid {
         grid-template-columns: calc(100% / 2) 1fr;
-    }
-}
-
-@media screen and (max-width: 1100px) {
-    #art-tile {
-        background-size: cover;
-    }
-
-    #art-tile:hover {
-        background-size: cover;
-    }
-    
-    #games-tile {
-        background-size: cover;
-    }
-
-    #games-tile:hover {
-        background-size: cover;
-    }
-
-    #media-tile {
-        background-size: cover;
-    }
-
-    #media-tile:hover {
-        background-size: cover;
-    }
-
-    #tools-tile {
-        background-size: cover;
-    }
-
-    #tools-tile:hover {
-        background-size: cover;
-    }
-
-    #sites-tile {
-        background-size: cover;
-    }
-
-    #sites-tile:hover {
-        background-size: cover;
-    }
-
-    .nav-tile img {
-        padding: 10rem 3.5rem;
     }
 }
 
@@ -655,10 +509,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 1000px) {
-    .nav-tile img {
-        padding: 10rem 0;
-    }
-
     #mainpage {
         padding: 0;
     }
@@ -673,14 +523,6 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 625px) {
-    .nav-tile img {
-        padding: 5rem 0;
-    }
-
-    .tile-link {
-        padding: 3rem;
-    }
-
     .contact-grid {
         display: block;
     }
