@@ -383,10 +383,10 @@ body::-webkit-scrollbar {
 
 .filtered-items .item-tile {
     position: relative;
-    width: 21rem;
-    height: 21rem;
+    width: 23rem;
+    height: 23rem;
     background: var(--primary-color);
-    margin: 1rem;
+    margin: 0.5rem;
     transition: 600ms;
 }
 
@@ -424,16 +424,6 @@ body::-webkit-scrollbar {
     background: rgba(0,0,0,0.75);
 }
 
-.filtered-items .item-tile:hover {
-    width: 23rem;
-    height: 23rem;
-}
-
-.filtered-items .item-tile:active {
-    width: 23rem;
-    height: 23rem;
-}
-
 .filtered-items .item-tile:hover > .tile-description {
     filter: opacity(1);
 }
@@ -444,16 +434,34 @@ body::-webkit-scrollbar {
 
 #possessor-tile {
     background: url(../Images/possessor_screenshot.png);
-    background-size: cover;
+    background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 600ms;
+}
+
+#possessor-tile:hover {
+    background-size: 250%;
+}
+
+#possessor-tile:active {
+    background-size: 250%;
 }
 
 #hymnprism-tile {
     background: url(../Images/hymnprism_screenshot.png);
-    background-size: cover;
+    background-size: 200%;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 600ms;
+}
+
+#hymnprism-tile:hover {
+    background-size: 250%;
+}
+
+#hymnprism-tile:active {
+    background-size: 250%;
 }
 
 .btn-link {
