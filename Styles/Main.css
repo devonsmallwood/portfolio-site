@@ -387,7 +387,6 @@ body::-webkit-scrollbar {
 .filtered-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .filtered-items .item-tile {
