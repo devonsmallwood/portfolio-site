@@ -19,6 +19,7 @@ html {
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
     border-collapse: separate;
+    perspective: 1px;
 }
 
 a {
