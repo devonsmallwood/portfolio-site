@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>my work | devon smallwood</title>
+        <link rel="icon" href="./Images/sites_icon.png">
+        <link href="./Styles/Main.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body class="scroll-enable">
+        <div id="backbar"></div>
+        <div id="progressbar"></div>
+        <script>
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop(), 
+                dh = $(document).height(),
+                wh = $(window).height();
+                scrollPercent = (scroll / (dh - wh)) * 100;
+                $('#progressbar').css('width', scrollPercent + '%');
+            });
+        </script>
+        <script>
+        </script>
+        <a href="javascript:void(0)" id="arrow" title="menu" class="arrow-inactive">menu</a>
+        <script>$("#arrow").click(function() {
+            $("#arrow").toggleClass('arrow-active arrow-inactive');
+            $("#navbar").toggleClass('navbar-active navbar-inactive');
+            $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
+            $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
+            $("body").toggleClass('scroll-enable scroll-disable');
+            document.getElementById("arrow").blur();
+            if($("#navbar").hasClass('navbar-active')) {
+                $('#games-link').attr( 'tabIndex', 0 );
+                $('#media-link').attr( 'tabIndex', 0 );
+                $('#tools-link').attr( 'tabIndex', 0 );
+            }
+            else {
+                $('#games-link').attr( 'tabIndex', -1 );
+                $('#media-link').attr( 'tabIndex', -1 );
+                $('#tools-link').attr( 'tabIndex', -1 );
+            }
+        });</script>
+        <a href="index.html" id="home-icon" title="home">home</a>
+        <a href="#" id="toparrow" title="back to top">back to top</a>
+        <script>$(window).scroll(function() {
+            if($(this).scrollTop() > 0) {
+                $('#toparrow').fadeIn();
+            }
+            else {
+                $('#toparrow').fadeOut();
+            }
+        });
+        </script>
+        <script>$("#toparrow").click(function() {
+            document.getElementById("toparrow").blur();
+        });</script>
+        <nav id="navbar" class="navbar-inactive">
+            <ul id="navbar-nav">
+                <li class="nav-item"><a id="about-link" href="index.html#about" tabindex="-1" class="nav-link" title="about">about</a></li>
+                <li class="nav-item"><a id="work-link" href="work.html#work" tabindex="-1" class="nav-link" title="my work">my work</a></li>
+                <li class="nav-item"><a id="exp-link" href="#exp" tabindex="-1" class="nav-link" title="experience">experience</a></li>
+                <li class="nav-item"><a id="contact-link" href="#contact" tabindex="-1" class="nav-link" title="contact">contact</a></li>
+            </ul>
+        </nav>
+        
+        <div>
+            <div id="header">
+                <h1 class="page-title">devon smallwood</h1>
+                <p class="subtitle">designer | developer | musical artist</p>
+            </div>
+            <div class="textzone" id="exp">
+                <h1 class="title">experience</h1>
+                <p class="maintext">while at university, devon focused primarily on game and web development, with an emphasis on unity, c#, html, and css.<br/><br/>
+                he is proficient with the adobe creative cloud suite, microsoft office, and g suite.<br/><br/>
+                he has experience developing websites with wordpress, as well as designing websites both from scratch and using bootstrap templates.<br/><br/>
+                devon also has worked with teams to design apps for both apple and android.<br/><br/>
+                he is familiar with xcode and swift and, utilizing apple's arkit, worked with other students to create an augmented reality ios app to help children with autism spectrum disorder to learn how to spell.<br/><br/>
+                he also worked with a team to develop a basic android app to keep record of lost dogs with ionic and firebase, using google maps api.</p>
+            </div>
+            <div class="textzone" id="contact">
+                <h1 class="title">contact</h1>
+                <div class="contact-grid">
+                    <p class="maintext"><a href="mailto:devonrsmallwood@gmail.com" target="_blank">email me</a></p>
+                    <p class="maintext"><a href="https://www.linkedin.com/in/devonsmallwood/" target="_blank">linkedin</a></p>
+                    <p class="maintext"><a href="https://github.com/devonsmallwood" target="_blank">github</a></p>
+                    <p class="maintext"><a href="./Media/smallwood_designresume.pdf" target="_blank">resume</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="hidenavzonehider" class="hidenavzone-hidden">
+            <div id="hidenavzone" class="hidenavzone-inactive">
+            </div>
+        </div>
+
+        <script>
+            $('#hidenavzone').click(function(event) {
+                if ($('#navbar').hasClass('navbar-active')) {
+                    $('#arrow').click();
+                }
+            });
+        </script>
+    </body>
+</html>
