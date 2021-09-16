@@ -99,7 +99,8 @@ body::-webkit-scrollbar {
 
 .exp-grid {
     display: grid;
-    grid-template-columns: calc(100%/2) 1fr;
+    grid-template-columns: calc(calc(100%/2) - 2rem) 1fr;
+    grid-column-gap: 4rem;
 }
 
 #img-me {
@@ -117,7 +118,6 @@ body::-webkit-scrollbar {
 
 .maintext {
     font-size: 1.2rem;
-    text-align: center;
     line-height: 1.6;
 }
 
@@ -345,15 +345,18 @@ body::-webkit-scrollbar {
 #work-filter ul {
     display: flex;
     margin-bottom: 2rem;
-    justify-content: center;
 }
 
 #work-filter ul li {
     background: var(--title-color);
     color: var(--text-color);
-    padding: 1rem;
     z-index: 2;
     white-space: nowrap;
+    transition: 600ms;
+}
+
+#work-filter ul li p {
+    padding: 1rem;
     transition: 600ms;
 }
 
@@ -362,9 +365,11 @@ body::-webkit-scrollbar {
     cursor: pointer;
 }
 
-#work-filter ul li.filter-active {
+#work-filter ul li.filter-active p {
     background: var(--text-color);
     color: var(--title-color);
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 #first-filter {
@@ -382,7 +387,7 @@ body::-webkit-scrollbar {
 .filtered-items {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .filtered-items .item-tile {
