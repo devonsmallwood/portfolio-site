@@ -18,8 +18,6 @@ html {
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-    border-collapse: separate;
-    perspective: 1px;
 }
 
 a {
@@ -447,6 +445,9 @@ body::-webkit-scrollbar {
     white-space: nowrap;
     border-start-start-radius: 2rem;
     border-end-end-radius: 2rem;
+    border-collapse: separate;
+    perspective: 1px;
+    overflow: hidden;
 }
 
 .btn-link:hover {
