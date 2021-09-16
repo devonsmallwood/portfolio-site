@@ -72,12 +72,40 @@
             </div>
             <div class="textzone" id="work">
                 <h1 class="title">my work (page under construction)</h1>
-                <nav id="tile-nav">
-                    <ul id="tile-ul">
-                        <li class="nav-tile"><a id="games-tile" href="https://devonrichardsmallwood.com/Media/Possessor_Setup.exe" tabindex="0" class="tile-link" title="possessor"><img src="./Images/games_icon.png"></a></li>
-                        <li class="nav-tile"><a id="tools-tile" href="https://devonrichardsmallwood.com/Media/Hymnprism_Setup.exe" tabindex="0" class="tile-link" title="hymnprism"><img src="./Images/tools_icon.png"></a></li>
+                <div id="work-filter">
+                    <ul>
+                        <li id="first-filter" class="filter-btn filter-active first-filter" data-filter="all">all</li>
+                        <li class="filter-btn filter-inactive" data-filter="games"><img src="./Images/games_icon.png"/> games</li>
+                        <li class="filter-btn filter-inactive" data-filter="tools"><img src="./Images/tools_icon.png"/> tools</li>
+                        <li class="filter-btn filter-inactive" data-filter="media"><img src="./Images/media_icon.png"/> media</li>
+                        <li id="last-filter" class="filter-btn filter-inactive last-filter" data-filter="websites"><img src="./Images/sites_icon.png"/> websites</li>
                     </ul>
-                </nav>
+                    <div class="filtered-items">
+                        <div id="possessor-tile" class="item-tile games"><img src="./Images/games_icon.png"><p class="tile-title">possessor</p><p class="tile-description">Possessor is a short virtual reality puzzle platformer demo developed with Unity XR.<br/><br/>It was designed with people like myself who experience motion sickness from free movement in mind.<br/><br/>The game's possession system allows the player to solve physics-based platforming puzzles without movement of the camera, which is generally what causes the worst motion sickness.</p><a class="btn-link tile-left-link" href="https://github.com/devonsmallwood/possessor" target="_blank">github</a><a class="btn-link tile-right-link" href="https://devonrichardsmallwood.com/Media/Possessor_Setup.exe">download</a></div>
+                        <div id="hymnprism-tile" class="item-tile tools"><img src="./Images/tools_icon.png"><p class="tile-title">hymnprism</p><p class="tile-description">Hymnprism is an audio visualization program developed in Unity.<br/><br/>The program was created for Boise State University's Luminary, located in the Center for the Visual Arts building.</p><a class="btn-link tile-left-link" href="https://github.com/devonsmallwood/Unity-Audiovisualizer" target="_blank">github</a><a class="btn-link tile-right-link" href="https://devonrichardsmallwood.com/Media/Hymnprism_Setup.exe">download</a></div>
+                        <div class="item-tile media"><img src="./Images/media_icon.png"><a href="#"></a></div>
+                        <div class="item-tile websites"><img src="./Images/sites_icon.png"><a href="#"></a></div>
+                    </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+                <script type="text/javascript">$(document).ready(function(){
+                    $('.filter-btn').click(function(){
+                        const value = $(this).attr('data-filter');
+                        if (value == 'all'){
+                            $('.item-tile').show('1000');
+                        }
+                        else{
+                            $('.item-tile').not('.'+value).hide('1000');
+                            $('.item-tile').filter('.'+value).show('1000');
+                        }
+                    })
+
+                    $('.filter-btn').click(function(){
+                        $(this).addClass('filter-active').siblings().removeClass('filter-active');
+                        $(this).removeClass('filter-inactive');
+                        $(this).siblings().addClass('filter-inactive');
+                    })
+                })</script>
             </div>
             <div class="textzone" id="contact">
                 <h1 class="title">contact</h1>
