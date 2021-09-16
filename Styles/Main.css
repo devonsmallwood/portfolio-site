@@ -315,6 +315,8 @@ body::-webkit-scrollbar {
     padding: 2rem;
     color: white;
     text-decoration: none;
+    border-start-start-radius: 2rem;
+    border-end-end-radius: 2rem;
 }
 
 .nav-link:hover {
