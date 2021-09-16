@@ -528,7 +528,7 @@ body::-webkit-scrollbar {
     }
 
     .contact-grid {
-        display: block;
+        grid-template-columns: calc(100% / 2) 1fr;
     }
 
     .contact-grid p {
@@ -543,6 +543,10 @@ body::-webkit-scrollbar {
 
     .tile-link {
         padding: 3rem;
+    }
+
+    .contact-grid {
+        display: block;
     }
 }
 
