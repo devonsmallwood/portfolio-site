@@ -4,7 +4,7 @@ html {
     --background-color: rgba(205,175,205, 0.9);
     --highlight-color: rgba(0,0,0,0.25);
     --text-color: rgb(35, 0, 35);
-    --title-color: rgb(255, 245, 255);
+    --title-color: white;
     --primary-color: rgb(135, 0, 135);
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -427,6 +427,25 @@ body::-webkit-scrollbar {
     padding-bottom: 6rem;
 }
 
+.btn-link {
+    font-size: 1rem;
+    padding: 1rem;
+    background: var(--title-color);
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 600ms;
+    font-weight: bolder;
+    white-space: nowrap;
+    border-start-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+}
+
+.btn-link:hover {
+    background: var(--text-color);
+    color: var(--title-color);
+    transition: 600ms;
+}
+
 @media screen and (max-width: 1800px) {
     #tile-ul {
         grid-template-columns: calc(100% / 2) 1fr;
@@ -499,7 +518,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .nav-tile img {
         padding: 10rem 0;
     }
