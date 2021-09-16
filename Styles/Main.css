@@ -197,10 +197,6 @@ body::-webkit-scrollbar {
 
 }
 
-#menu-btn img {
-    width: 1.25rem;
-}
-
 #menu-btn:hover {
     filter: brightness(100%);
     cursor: pointer;
@@ -228,10 +224,6 @@ body::-webkit-scrollbar {
     border-bottom-left-radius: 2rem;
 }
 
-#home-btn img {
-    width: 1.25rem;
-}
-
 #home-btn:hover {
     filter: brightness(100%);
     cursor: pointer;
@@ -251,10 +243,6 @@ body::-webkit-scrollbar {
     background-color: var(--highlight-color);
     border-top-left-radius: 2rem;
 
-}
-
-#top-btn img {
-    width: 1.25rem;
 }
 
 #top-btn:hover {
@@ -381,7 +369,7 @@ body::-webkit-scrollbar {
 }
 
 .filter-btn img {
-    width: 0.75rem;
+    width: 0.5rem;
 }
 
 .filtered-items {
@@ -411,7 +399,7 @@ body::-webkit-scrollbar {
 }
 
 .filtered-items .item-tile img {
-    width: 0.75rem;
+    width: 0.5rem;
     padding: 1rem;
     background: var(--text-color);
     border-bottom-right-radius: 1rem;
