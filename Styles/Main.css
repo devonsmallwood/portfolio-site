@@ -653,10 +653,6 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 1200px) {
-    html {
-        font-size: 1.5rem;
-    }
-
     .exp-grid {
         display: block;
     }
