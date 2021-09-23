@@ -569,6 +569,7 @@ input, textarea {
     max-height: 30vh;
     height: 10vh;
     resize: vertical;
+    transition: 0ms;
 }
 
 input:focus, textarea:focus {
