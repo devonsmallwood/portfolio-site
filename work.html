@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>my work | devon smallwood</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./Images/sites_icon.png">
         <link href="./Styles/Main.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -74,15 +75,15 @@
                 <h1 class="title">my work (page under construction)</h1>
                 <div id="work-filter">
                     <ul>
-                        <li id="first-filter" class="filter-btn filter-active first-filter" data-filter="all"><p>all</p></li>
-                        <li class="filter-btn filter-inactive" data-filter="games"><p><img src="./Images/games_icon.png"/> games</p></li>
-                        <li class="filter-btn filter-inactive" data-filter="tools"><p><img src="./Images/tools_icon.png"/> tools</p></li>
-                        <li class="filter-btn filter-inactive" data-filter="media"><p><img src="./Images/media_icon.png"/> media</p></li>
-                        <li id="last-filter" class="filter-btn filter-inactive last-filter" data-filter="websites"><p><img src="./Images/sites_icon.png"/> websites</p></li>
+                        <li id="first-filter" class="filter-btn filter-active first-filter" data-filter="all" title="filter by all"><p>all</p></li>
+                        <li class="filter-btn filter-inactive" data-filter="games" title="filter by games"><p><img src="./Images/games_icon.png"/> games</p></li>
+                        <li class="filter-btn filter-inactive" data-filter="tools" title="filter by tools"><p><img src="./Images/tools_icon.png"/> tools</p></li>
+                        <li class="filter-btn filter-inactive" data-filter="media" title="filter by media"><p><img src="./Images/media_icon.png"/> media</p></li>
+                        <li id="last-filter" class="filter-btn filter-inactive last-filter" data-filter="websites" title="filter by websites"><p><img src="./Images/sites_icon.png"/> websites</p></li>
                     </ul>
                     <div class="filtered-items">
-                        <div id="possessor-tile" class="item-tile games" ontouchstart=""><img src="./Images/games_icon.png"><p class="tile-title">possessor</p><p class="tile-description">Possessor is a short virtual reality puzzle platformer demo developed with Unity XR.<br/><br/>It was designed with people like myself who experience motion sickness from free movement in mind.<br/><br/>The game's possession system allows the player to solve physics-based platforming puzzles without movement of the camera, which is generally what causes the worst motion sickness.</p><a class="btn-link tile-left-link" href="https://github.com/devonsmallwood/possessor" target="_blank">github</a><a class="btn-link tile-right-link" href="https://devonrichardsmallwood.com/Media/Possessor_Setup.exe">download</a></div>
-                        <div id="hymnprism-tile" class="item-tile tools" ontouchstart=""><img src="./Images/tools_icon.png"><p class="tile-title">hymnprism</p><p class="tile-description">Hymnprism is an audio visualization program developed in Unity.<br/><br/>The program was created for Boise State University's Luminary, located in the Center for the Visual Arts building.</p><a class="btn-link tile-left-link" href="https://github.com/devonsmallwood/Unity-Audiovisualizer" target="_blank">github</a><a class="btn-link tile-right-link" href="https://devonrichardsmallwood.com/Media/Hymnprism_Setup.exe">download</a></div>
+                        <div id="possessor-tile" class="item-tile games" ontouchstart=""><img src="./Images/games_icon.png"><p class="tile-title">possessor</p><p class="tile-description">Possessor is a short virtual reality puzzle platformer demo developed with Unity XR.<br/><br/>It was designed with people like myself who experience motion sickness from free movement in mind.<br/><br/>The game's possession system allows the player to solve physics-based platforming puzzles without movement of the camera, which is generally what causes the worst motion sickness.</p><a class="btn-link tile-left-link" href="https://github.com/devonsmallwood/possessor" target="_blank" title="possessor github repo">github</a><a class="btn-link tile-right-link" href="https://devonrichardsmallwood.com/Media/Possessor_Setup.exe" title="download possessor">download</a></div>
+                        <div id="hymnprism-tile" class="item-tile tools" ontouchstart=""><img src="./Images/tools_icon.png"><p class="tile-title">hymnprism</p><p class="tile-description">Hymnprism is an audio visualization program developed in Unity.<br/><br/>The program was created for Boise State University's Luminary, located in the Center for the Visual Arts building.</p><a class="btn-link tile-left-link" href="https://github.com/devonsmallwood/Unity-Audiovisualizer" target="_blank" title="hymnprism github repo">github</a><a class="btn-link tile-right-link" href="https://devonrichardsmallwood.com/Media/Hymnprism_Setup.exe" title="download hymnprism">download</a></div>
                         <div class="item-tile media" ontouchstart=""><img src="./Images/media_icon.png"><p class="tile-title">placeholder</p><a href="#"></a></div>
                         <div class="item-tile websites" ontouchstart=""><img src="./Images/sites_icon.png"><p class="tile-title">placeholder</p><a href="#"></a></div>
                         <div class="item-tile games" ontouchstart=""><img src="./Images/games_icon.png"><p class="tile-title">placeholder</p><a href="#"></a></div>
@@ -116,10 +117,10 @@
             <div class="textzone" id="contact">
                 <h1 class="title">contact</h1>
                 <div class="contact-grid">
-                    <p class="maintext"><a class="btn-link" href="mailto:devonrsmallwood@gmail.com" target="_blank">email me</a></p>
-                    <p class="maintext"><a class="btn-link" href="https://www.linkedin.com/in/devonsmallwood/" target="_blank">linkedin</a></p>
-                    <p class="maintext"><a class="btn-link" href="https://github.com/devonsmallwood" target="_blank">github</a></p>
-                    <p class="maintext"><a class="btn-link" href="./Media/smallwood_designresume.pdf" target="_blank">resume</a></p>
+                    <p class="maintext"><a id="email-btn" class="btn-link" title="email me">email me</a></p>
+                    <p class="maintext"><a class="btn-link" href="https://www.linkedin.com/in/devonsmallwood/" target="_blank" title="linkedin">linkedin</a></p>
+                    <p class="maintext"><a class="btn-link" href="https://github.com/devonsmallwood" target="_blank" title="github">github</a></p>
+                    <p class="maintext"><a class="btn-link" href="./Media/smallwood_designresume.pdf" target="_blank" title="resume">resume</a></p>
                 </div>
             </div>
         </div>
@@ -127,7 +128,33 @@
             <div id="hidenavzone" class="hidenavzone-inactive">
             </div>
         </div>
-
+        <section id="contact-form" class="form-hide">
+            <div id="cf-container" class="container">
+                <div>
+                    <p id="form-close-btn" class="maintext">&#10005</p>
+                </div>
+                <form action="https://formspree.io/f/mdoybjza" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label for="first-name">first name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">last name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    </div>
+                    <button id="email-send-btn" class="btn-link" type="submit" title="send">send</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
         <script>
             var jQuery_latest = $.noConflict(true);
             $('#hidenavzone').click(function(event) {
@@ -135,6 +162,17 @@
                     $('#menu-btn').click();
                 }
             });
+
+            $("#email-btn").click(function() {
+                        $("#contact-form").toggleClass('form-hide form-show');
+                        $("body").toggleClass('scroll-enable scroll-disable');
+            });
+            
+            $("#form-close-btn").click(function() {
+                        $("#contact-form").toggleClass('form-hide form-show');
+                        $("body").toggleClass('scroll-enable scroll-disable');
+            });
         </script>
+        <script src="./JavaScript/main.js"></script>
     </body>
 </html>

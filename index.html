@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>home | devon smallwood</title>
         <link rel="icon" href="./Images/sites_icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./Styles/Main.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
@@ -77,16 +78,16 @@
                     <p class="maintext">Devon Smallwood is a prospective developer, designer, and musical artist from the Seattle area.<br/><br/>
                         He enjoys programming, reading, writing, singing, and drinking far too much coffee.<br/><br/>
                         Devon studied interactive media in Boise State University's Games, Interactive Media, and Mobile Technology (GIMM) program.<br/><br/><br/><br/>
-                        <a class="btn-link" href="https://www.boisestate.edu/gimm/about/" target="_blank">learn more about gimm here</a></p>
+                        <a class="btn-link" href="https://www.boisestate.edu/gimm/about/" target="_blank" title="about gimm">learn more about gimm here</a></p>
                 </div>
             </div>
             <div class="textzone" id="contact">
                 <h1 class="title">contact</h1>
                 <div class="contact-grid">
-                    <p class="maintext"><a class="btn-link" href="mailto:devonrsmallwood@gmail.com" target="_blank">email me</a></p>
-                    <p class="maintext"><a class="btn-link" href="https://www.linkedin.com/in/devonsmallwood/" target="_blank">linkedin</a></p>
-                    <p class="maintext"><a class="btn-link" href="https://github.com/devonsmallwood" target="_blank">github</a></p>
-                    <p class="maintext"><a class="btn-link" href="./Media/smallwood_designresume.pdf" target="_blank">resume</a></p>
+                    <p class="maintext"><a id="email-btn" class="btn-link" title="email me">email me</a></p>
+                    <p class="maintext"><a class="btn-link" href="https://www.linkedin.com/in/devonsmallwood/" target="_blank" title="linkedin">linkedin</a></p>
+                    <p class="maintext"><a class="btn-link" href="https://github.com/devonsmallwood" target="_blank" title="github">github</a></p>
+                    <p class="maintext"><a class="btn-link" href="./Media/smallwood_designresume.pdf" target="_blank" title="resume">resume</a></p>
                 </div>
             </div>
         </div>
@@ -94,13 +95,50 @@
             <div id="hidenavzone" class="hidenavzone-inactive">
             </div>
         </div>
-
+        <section id="contact-form" class="form-hide">
+            <div id="cf-container" class="container">
+                <div>
+                    <p id="form-close-btn" class="maintext">&#10005</p>
+                </div>
+                <form action="https://formspree.io/f/mdoybjza" method="POST" id="my-form">
+                    <div class="form-group">
+                        <label for="first-name">first name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">last name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    </div>
+                    <button id="email-send-btn" class="btn-link" type="submit" title="send">send</button>
+                </form>
+            </div>
+            <div id="status"></div>
+        </section>
         <script>
             $('#hidenavzone').click(function(event) {
                 if ($('#navbar').hasClass('navbar-active')) {
                     $('#menu-btn').click();
                 }
             });
+
+            $("#email-btn").click(function() {
+                        $("#contact-form").toggleClass('form-hide form-show');
+                        $("body").toggleClass('scroll-enable scroll-disable');
+            });
+            
+            $("#form-close-btn").click(function() {
+                        $("#contact-form").toggleClass('form-hide form-show');
+                        $("body").toggleClass('scroll-enable scroll-disable');
+            });
         </script>
+        <script src="./JavaScript/main.js"></script>
     </body>
 </html>

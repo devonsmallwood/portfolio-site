@@ -169,7 +169,7 @@ body::-webkit-scrollbar {
     width: 100%;
     height: 0.25rem;
     background: white;
-    z-index: 5;
+    z-index: 6;
 }
 
 #progressbar {
@@ -180,7 +180,7 @@ body::-webkit-scrollbar {
     width: 0%;
     height: 0.25rem;
     background: var(--primary-color);
-    z-index: 6;
+    z-index: 7;
 }
 
 #menu-btn {
@@ -496,6 +496,147 @@ body::-webkit-scrollbar {
     background: var(--text-color);
     color: var(--title-color);
     padding: 1.5rem;
+}
+
+#email-btn:hover {
+    cursor: pointer;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form-show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#contact-form {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.75);
+    box-sizing: border-box;
+    flex-direction: column;
+    z-index: 5;
+    transition: 600ms;
+}
+
+#cf-container {
+    width: 90%;
+    max-width: 30rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background: var(--background-color);
+    border-radius: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    width: 100%;
+    max-height: 80vh;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    clear: both;
+    display: block;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--text-color);
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 600ms;
+}
+
+.form-group textarea {
+    max-height: 30vh;
+    height: 10vh;
+    resize: vertical;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.form-group textarea::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+.form-group textarea::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+.form-group textarea::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+#email-send-btn {
+    margin-top: 1rem;
+    border: none;
+}
+
+#status {
+    width: 90%;
+    max-width: 30rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    filter: opacity(0.75);
+}
+
+#status.success {
+    background: greenyellow;
+    color: var(--text-color);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background: orangered;
+    color: var(--title-color);
+}
+
+#form-close-btn {
+    transition: 200ms;
+    opacity: 1;
+    float: right;
+    padding: 0.5rem;
+}
+
+#form-close-btn:hover {
+    opacity: 0.5;
+}
+
+@keyframes status {
+    0% {
+        opacity: 0.75;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 0.75;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 @media screen and (max-width: 1600px) {
