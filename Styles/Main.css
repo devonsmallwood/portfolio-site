@@ -672,8 +672,8 @@ input:focus, textarea:focus {
 }
 
 @media screen and (max-width: 625px) {
-    .contact-grid {
-        display: block;
+    html {
+        font-size: 0.8rem;
     }
 
     #work-filter ul {
