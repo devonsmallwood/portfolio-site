@@ -253,11 +253,13 @@ body::-webkit-scrollbar {
 .top-btn-active {
     opacity: 1;
     pointer-events: all;
+    touch-action: auto;
 }
 
 .top-btn-hide {
     opacity: 0;
     pointer-events: none;
+    touch-action: none;
 }
 
 #navbar {
