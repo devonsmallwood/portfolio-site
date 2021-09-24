@@ -4,10 +4,10 @@ html {
     --background-color: rgba(205,175,205, 0.9);
     --highlight-color: rgba(0,0,0,0.25);
     --text-color: rgb(35, 0, 35);
-    --title-color: white;
     --primary-color: rgb(135, 0, 135);
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
     background-image: url(../Images/IMG_0791.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -80,7 +80,7 @@ body::-webkit-scrollbar {
     margin-top: 80vh;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    color: var(--title-color);
+    color: white;
     background-color: var(--highlight-color);
 }
 
@@ -117,7 +117,7 @@ body::-webkit-scrollbar {
 .subtitle {
     font-size: 1.2rem;
     text-align: center;
-    color: var(--title-color);
+    color: white;
     background-color: var(--highlight-color);
     padding-bottom: 1rem;
 }
@@ -196,7 +196,7 @@ body::-webkit-scrollbar {
     padding: 2rem;
     filter: brightness(10%);
     transition: 600ms;
-    color: var(--title-color);
+    color: white;
     text-decoration: none;
     background-color: var(--highlight-color);
     border-bottom-right-radius: 2rem;
@@ -226,7 +226,7 @@ body::-webkit-scrollbar {
     filter: brightness(10%);
     transition: 600ms;
     text-decoration: none;
-    color: var(--title-color);
+    color: white;
     background-color: var(--highlight-color);
     border-bottom-left-radius: 2rem;
 }
@@ -246,7 +246,7 @@ body::-webkit-scrollbar {
     filter: brightness(10%);
     animation: icon-unhover forwards ease 600ms;
     display: none;
-    color: var(--title-color);
+    color: white;
     text-decoration: none;
     background-color: var(--highlight-color);
     border-top-left-radius: 2rem;
@@ -346,7 +346,7 @@ body::-webkit-scrollbar {
 }
 
 #work-filter ul li {
-    background: var(--title-color);
+    background: white;
     color: var(--text-color);
     z-index: 2;
     white-space: nowrap;
@@ -365,7 +365,7 @@ body::-webkit-scrollbar {
 
 #work-filter ul li.filter-active p {
     background: var(--text-color);
-    color: var(--title-color);
+    color: white;
     border-top-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
@@ -417,7 +417,7 @@ body::-webkit-scrollbar {
 
 .tile-title {
     font-size: 1.2rem;
-    color: var(--title-color);
+    color: white;
     text-align: center;
     font-weight: bolder;
     padding-bottom: 1rem;
@@ -425,7 +425,7 @@ body::-webkit-scrollbar {
 
 .tile-description {
     padding: 2rem;
-    color: var(--title-color);
+    color: white;
     filter: opacity(0);
     transition: 600ms;
     background: rgba(0,0,0,0.75);
@@ -474,7 +474,7 @@ body::-webkit-scrollbar {
 .btn-link {
     font-size: 1rem;
     padding: 1rem;
-    background: var(--title-color);
+    background: white;
     text-decoration: none;
     color: var(--text-color);
     transition: 600ms;
@@ -486,7 +486,7 @@ body::-webkit-scrollbar {
 
 .btn-link:hover {
     background: var(--text-color);
-    color: var(--title-color);
+    color: white;
     padding: 1.5rem;
 }
 
@@ -603,7 +603,7 @@ input:focus, textarea:focus {
 
 #status.error {
     background: orangered;
-    color: var(--title-color);
+    color: white;
 }
 
 #form-close-btn {
