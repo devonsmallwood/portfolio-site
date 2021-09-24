@@ -8,7 +8,7 @@
         <link href="./Styles/Main.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
-    <body class="scroll-enable">
+    <body>
         <div id="backbar"></div>
         <div id="progressbar"></div>
         <a href="javascript:void(0)" id="menu-btn" title="menu" class="menu-btn-inactive">menu</a>
@@ -94,7 +94,6 @@
                 $("#navbar").toggleClass('navbar-active navbar-inactive');
                 $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
                 $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
-                $("body").toggleClass('scroll-enable scroll-disable');
                 document.getElementById("menu-btn").blur();
                 if($("#navbar").hasClass('navbar-active')) {
                     $('#about-link').attr( 'tabIndex', 0 );
@@ -131,12 +130,10 @@
 
             $("#email-btn").click(function() {
                         $("#contact-form").toggleClass('form-hide form-show');
-                        $("body").toggleClass('scroll-enable scroll-disable');
             });
             
             $("#form-close-btn").click(function() {
                         $("#contact-form").toggleClass('form-hide form-show');
-                        $("body").toggleClass('scroll-enable scroll-disable');
             });
         </script>
         <script src="./JavaScript/main.js"></script>
