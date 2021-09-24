@@ -14,7 +14,7 @@
         <a href="javascript:void(0)" id="menu-btn" title="menu" class="menu-btn-inactive">menu</a>
         <script></script>
         <a href="index.html" id="home-btn" title="home">home</a>
-        <a href="#" id="top-btn" title="back to top">back to top</a>
+        <a href="#" id="top-btn" class="top-btn-hide" title="back to top">back to top</a>
         <nav id="navbar" class="navbar-inactive">
             <ul id="navbar-nav">
                 <li class="nav-item"><a id="about-link" href="index.html#about" tabindex="-1" class="nav-link" title="about">about</a></li>
@@ -145,15 +145,14 @@
             
             $(window).scroll(function() {
                 if($(this).scrollTop() > 0) {
-                    $('#top-btn').fadeIn();
+                    $('#top-btn').addClass('top-btn-show');
+                    $('#top-btn').removeClass('top-btn-hide');
                 }
                 else {
-                    $('#top-btn').fadeOut();
+                    $('#top-btn').addClass('top-btn-hide');
+                    $('#top-btn').removeClass('top-btn-show');
+                    $('#top-btn').blur();
                 }
-            });
-            
-            $("#top-btn").click(function() {
-                document.getElementById("top-btn").blur();
             });
             
             $('#hidenavzone').click(function(event) {

@@ -19,7 +19,6 @@ html {
     user-select: none; /* Standard */
     height: 100%;
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -238,9 +237,7 @@ body::-webkit-scrollbar {
     position: fixed;
     z-index: 4;
     padding: 2rem;
-    filter: brightness(10%);
-    animation: icon-unhover forwards ease 600ms;
-    display: none;
+    filter: brightness(100%);
     color: white;
     text-decoration: none;
     background-color: rgba(0,0,0,0.25);
@@ -249,26 +246,18 @@ body::-webkit-scrollbar {
 }
 
 #top-btn:hover {
-    animation: btn-hover forwards ease 600ms;
+    filter: brightness(10%);
     padding: 3rem;
 }
 
-@keyframes icon-unhover {
-    0% {
-        filter: brightness(10%);
-    }
-    100% {
-        filter: brightness(100%);
-    }
+.top-btn-active {
+    opacity: 1;
+    pointer-events: all;
 }
 
-@keyframes btn-hover {
-    0% {
-        filter: brightness(100%);
-    }
-    100% {
-        filter: brightness(10%);
-    }
+.top-btn-hide {
+    opacity: 0;
+    pointer-events: none;
 }
 
 #navbar {
