@@ -186,17 +186,14 @@ body::-webkit-scrollbar {
     top: 0;
     position: fixed;
     z-index: 4;
-    padding: 2rem;
-    filter: brightness(100%);
     transition: 600ms;
-    color: white;
     text-decoration: none;
     background-color: rgba(0,0,0,0.25);
     border-bottom-right-radius: 2rem;
-
+    color: white;
 }
 
-#menu-btn:hover {
+#menu-btn.menu-btn-inactive:hover {
     cursor: pointer;
     padding: 3rem;
     filter: brightness(10%);
@@ -204,10 +201,14 @@ body::-webkit-scrollbar {
 
 .menu-btn-inactive {
     left: 0;
+    padding: 2rem;
+    filter: brightness(100%);
 }
 
 .menu-btn-active {
     left: 10rem;
+    padding: 3rem;
+    filter: brightness(10%);
 }
 
 #home-btn {
