@@ -449,34 +449,20 @@ body::-webkit-scrollbar {
 
 #possessor-tile {
     background: url(../Images/possessor_screenshot.png);
-    background-size: 200%;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: 600ms;
-}
-
-#possessor-tile:hover {
-    background-size: 250%;
-}
-
-#possessor-tile:active {
-    background-size: 250%;
+    min-height: 100%;
 }
 
 #hymnprism-tile {
     background: url(../Images/hymnprism_screenshot.png);
-    background-size: 200%;
+    background-size:    cover;
     background-position: center;
     background-repeat: no-repeat;
     transition: 600ms;
-}
-
-#hymnprism-tile:hover {
-    background-size: 250%;
-}
-
-#hymnprism-tile:active {
-    background-size: 250%;
+    min-height: 100%;
 }
 
 .btn-link {
@@ -666,7 +652,7 @@ input:focus, textarea:focus {
         margin-bottom: 2rem;
     }
 
-    .filter-btn {
+    .tile-left-link, .tile-right-link {
         font-size: 0.8rem;
     }
 }
@@ -688,5 +674,10 @@ input:focus, textarea:focus {
 @media screen and (max-width: 625px) {
     .contact-grid {
         display: block;
+    }
+
+    #work-filter ul {
+        display: block;
+        text-align: center;
     }
 }
