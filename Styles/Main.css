@@ -7,7 +7,8 @@ html {
     --primary-color: rgb(135, 0, 135);
     font-size: 16px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background: url(../Images/IMG_0791.png);
+    background-color: black;
+    background-image: url(../Images/IMG_0791.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
