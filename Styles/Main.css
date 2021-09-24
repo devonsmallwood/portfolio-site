@@ -681,7 +681,7 @@ input:focus, textarea:focus {
         text-align: center;
     }
 
-    #cf-container {
+    #cf-container, #status {
         width: 50%;
     }
 }
