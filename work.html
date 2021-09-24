@@ -11,51 +11,10 @@
     <body>
         <div id="backbar"></div>
         <div id="progressbar"></div>
-        <script>
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop(), 
-                dh = $(document).height(),
-                wh = $(window).height();
-                scrollPercent = (scroll / (dh - wh)) * 100;
-                $('#progressbar').css('width', scrollPercent + '%');
-            });
-        </script>
-        <script>
-        </script>
         <a href="javascript:void(0)" id="menu-btn" title="menu" class="menu-btn-inactive">menu</a>
-        <script>$("#menu-btn").click(function() {
-            $("#menu-btn").toggleClass('menu-btn-active menu-btn-inactive');
-            $("#navbar").toggleClass('navbar-active navbar-inactive');
-            $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
-            $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
-            document.getElementById("menu-btn").blur();
-            if($("#navbar").hasClass('navbar-active')) {
-                $('#about-link').attr( 'tabIndex', 0 );
-                $('#work-link').attr( 'tabIndex', 0 );
-                $('#exp-link').attr( 'tabIndex', 0 );
-                $('#contact-link').attr( 'tabIndex', 0 );
-            }
-            else {
-                $('#about-link').attr( 'tabIndex', -1 );
-                $('#work-link').attr( 'tabIndex', -1 );
-                $('#exp-link').attr( 'tabIndex', -1 );
-                $('#contact-link').attr( 'tabIndex', -1 );
-            }
-        });</script>
+        <script></script>
         <a href="index.html" id="home-btn" title="home">home</a>
         <a href="#" id="top-btn" title="back to top">back to top</a>
-        <script>$(window).scroll(function() {
-            if($(this).scrollTop() > 0) {
-                $('#top-btn').fadeIn();
-            }
-            else {
-                $('#top-btn').fadeOut();
-            }
-        });
-        </script>
-        <script>$("#top-btn").click(function() {
-            document.getElementById("top-btn").blur();
-        });</script>
         <nav id="navbar" class="navbar-inactive">
             <ul id="navbar-nav">
                 <li class="nav-item"><a id="about-link" href="index.html#about" tabindex="-1" class="nav-link" title="about">about</a></li>
@@ -63,8 +22,7 @@
                 <li class="nav-item"><a id="exp-link" href="exp.html#exp" tabindex="-1" class="nav-link" title="experience">experience</a></li>
                 <li class="nav-item"><a id="contact-link" href="#contact" tabindex="-1" class="nav-link" title="contact">contact</a></li>
             </ul>
-        </nav>
-        
+        </nav>     
         <div>
             <div id="header">
                 <h1 class="page-title">devon smallwood</h1>
@@ -111,7 +69,7 @@
                         $(this).removeClass('filter-inactive');
                         $(this).siblings().addClass('filter-inactive');
                     })
-                })</script>
+                });</script>
             </div>
             <div class="textzone" id="contact">
                 <h1 class="title">contact</h1>
@@ -156,6 +114,48 @@
         </section>
         <script>
             var jQuery_latest = $.noConflict(true);
+
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop(), 
+                dh = $(document).height(),
+                wh = $(window).height();
+                scrollPercent = (scroll / (dh - wh)) * 100;
+                $('#progressbar').css('width', scrollPercent + '%');
+            });
+            
+            $("#menu-btn").click(function() {
+                $("#menu-btn").toggleClass('menu-btn-active menu-btn-inactive');
+                $("#navbar").toggleClass('navbar-active navbar-inactive');
+                $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
+                $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
+                document.getElementById("menu-btn").blur();
+                if($("#navbar").hasClass('navbar-active')) {
+                    $('#about-link').attr( 'tabIndex', 0 );
+                    $('#work-link').attr( 'tabIndex', 0 );
+                    $('#exp-link').attr( 'tabIndex', 0 );
+                    $('#contact-link').attr( 'tabIndex', 0 );
+                }
+                else {
+                    $('#about-link').attr( 'tabIndex', -1 );
+                    $('#work-link').attr( 'tabIndex', -1 );
+                    $('#exp-link').attr( 'tabIndex', -1 );
+                    $('#contact-link').attr( 'tabIndex', -1 );
+                }
+            });
+            
+            $(window).scroll(function() {
+                if($(this).scrollTop() > 0) {
+                    $('#top-btn').fadeIn();
+                }
+                else {
+                    $('#top-btn').fadeOut();
+                }
+            });
+            
+            $("#top-btn").click(function() {
+                document.getElementById("top-btn").blur();
+            });
+            
             $('#hidenavzone').click(function(event) {
                 if ($('#navbar').hasClass('navbar-active')) {
                     $('#menu-btn').click();
@@ -163,11 +163,11 @@
             });
 
             $("#email-btn").click(function() {
-                        $("#contact-form").toggleClass('form-hide form-show');
+                $("#contact-form").toggleClass('form-hide form-show');
             });
             
             $("#form-close-btn").click(function() {
-                        $("#contact-form").toggleClass('form-hide form-show');
+                $("#contact-form").toggleClass('form-hide form-show');
             });
         </script>
         <script src="./JavaScript/main.js"></script>
