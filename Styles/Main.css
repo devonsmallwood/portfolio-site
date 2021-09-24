@@ -680,4 +680,8 @@ input:focus, textarea:focus {
         display: block;
         text-align: center;
     }
+
+    #cf-container {
+        width: 50%;
+    }
 }
