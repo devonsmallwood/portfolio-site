@@ -19,6 +19,7 @@ html {
     user-select: none; /* Standard */
     height: 100%;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 body {
