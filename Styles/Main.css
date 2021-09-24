@@ -20,6 +20,12 @@ html {
     user-select: none; /* Standard */
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 a {
     outline: none;
 }
