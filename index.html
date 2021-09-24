@@ -92,7 +92,6 @@
                 $("#navbar").toggleClass('navbar-active navbar-inactive');
                 $("#hidenavzone").toggleClass('hidenavzone-active hidenavzone-inactive');
                 $("#hidenavzonehider").toggleClass('hidenavzone-shown hidenavzone-hidden');
-                document.getElementById("menu-btn").blur();
                 if($("#navbar").hasClass('navbar-active')) {
                     $('#about-link').attr( 'tabIndex', 0 );
                     $('#work-link').attr( 'tabIndex', 0 );
@@ -116,6 +115,7 @@
                     $('#top-btn').addClass('top-btn-hide');
                     $('#top-btn').removeClass('top-btn-show');
                     $('#top-btn').blur();
+                    $('#top-btn').touchend();
                 }
             });
 
