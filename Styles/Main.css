@@ -187,7 +187,7 @@ body::-webkit-scrollbar {
     position: fixed;
     z-index: 4;
     padding: 2rem;
-    filter: brightness(10%);
+    filter: brightness(100%);
     transition: 600ms;
     color: white;
     text-decoration: none;
@@ -197,9 +197,9 @@ body::-webkit-scrollbar {
 }
 
 #menu-btn:hover {
-    filter: brightness(100%);
     cursor: pointer;
     padding: 3rem;
+    filter: brightness(10%);
 }
 
 .menu-btn-inactive {
@@ -216,7 +216,7 @@ body::-webkit-scrollbar {
     position: fixed;
     z-index: 4;
     padding: 2rem;
-    filter: brightness(10%);
+    filter: brightness(100%);
     transition: 600ms;
     text-decoration: none;
     color: white;
@@ -225,9 +225,9 @@ body::-webkit-scrollbar {
 }
 
 #home-btn:hover {
-    filter: brightness(100%);
     cursor: pointer;
     padding: 3rem;
+    filter: brightness(10%);
 }
 
 #top-btn {
@@ -253,19 +253,19 @@ body::-webkit-scrollbar {
 
 @keyframes icon-unhover {
     0% {
-        filter: brightness(100%);
+        filter: brightness(10%);
     }
     100% {
-        filter: brightness(10%);
+        filter: brightness(100%);
     }
 }
 
 @keyframes btn-hover {
     0% {
-        filter: brightness(10%);
+        filter: brightness(100%);
     }
     100% {
-        filter: brightness(100%);
+        filter: brightness(10%);
     }
 }
 
