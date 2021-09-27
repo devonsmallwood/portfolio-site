@@ -382,16 +382,25 @@ body::-webkit-scrollbar {
     transition: 600ms;
 }
 
-.tile-left-link {
+.tile-left-btn {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
 }
 
-.tile-right-link {
+.tile-right-btn {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
+}
+
+.tile-link {
+    color: white;
+    transition: 200ms;
+}
+
+.tile-link:hover {
+    color: var(--primary-color);
 }
 
 .filtered-items .item-tile img {
@@ -667,7 +676,7 @@ input:focus, textarea:focus {
         margin-bottom: 2rem;
     }
 
-    .tile-left-link, .tile-right-link {
+    .tile-left-btn, .tile-right-btn {
         font-size: 0.8rem;
     }
 }
