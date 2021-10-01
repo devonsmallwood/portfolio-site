@@ -134,7 +134,7 @@ body::-webkit-scrollbar {
     left: 0;
     width: 100vw;
     height: 100vh;
-    transition: 600ms;
+    transition: all 600ms, width 0ms, height 0ms;
 }
 
 .hidenavzone-active {
@@ -268,7 +268,6 @@ body::-webkit-scrollbar {
     position: fixed;
     background-color:  black;
     z-index: 4;
-    transition: 600ms;
     top: 0;
 }
 
@@ -635,6 +634,14 @@ input:focus, textarea:focus {
     opacity: 0.5;
 }
 
+.disable-transitions {
+    transition: none !important;
+}
+
+.enable-transitions {
+    transition: 600ms !important;
+}
+
 @keyframes status {
     0% {
         opacity: 0.75;
@@ -678,6 +685,45 @@ input:focus, textarea:focus {
 
     .tile-left-btn, .tile-right-btn {
         font-size: 0.8rem;
+    }
+
+    #navbar {
+        height: 10rem;
+        width: 100vw;
+    }
+    
+    .navbar-inactive {
+        top: -10rem !important;
+        left: 0;
+    }
+    
+    .navbar-active {
+        top: 0;
+        left: 0;
+    }
+    
+    #navbar-nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .nav-link {
+        height: 1rem;
+    }
+
+    .menu-btn-inactive {
+        top: 0;
+        left: 0;
+    }
+    
+    .menu-btn-active {
+        top: 10rem !important;
+        left: 0;
+    }
+
+    .menu-btn-active + #home-btn {
+        top: 10rem;
     }
 }
 
