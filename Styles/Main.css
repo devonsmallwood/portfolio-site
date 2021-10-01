@@ -639,7 +639,7 @@ input:focus, textarea:focus {
 }
 
 .enable-transitions {
-    transition: 600ms !important;
+    transition: all 600ms, width 0ms, height 0ms !important;
 }
 
 @keyframes status {
