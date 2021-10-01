@@ -168,6 +168,42 @@
             $("#form-close-btn").click(function() {
                 $("#contact-form").toggleClass('form-hide form-show');
             });
+
+            function resizeWindow(x) {
+                if (x.matches) {
+                    $('#navbar').removeClass('enable-transitions');
+                    $('#navbar').addClass('disable-transitions');
+                    $('#home-btn').removeClass('enable-transitions');
+                    $('#home-btn').addClass('disable-transitions');
+                    $('#menu-btn').removeClass('enable-transitions');
+                    $('#menu-btn').addClass('disable-transitions');
+                    setTimeout(() => {$('#navbar')[0].offsetHeight;
+                    $('#navbar').removeClass('disable-transitions');
+                    $('#navbar').addClass('enable-transitions');
+                    $('#home-btn').removeClass('disable-transitions');
+                    $('#home-btn').addClass('enable-transitions');
+                    $('#menu-btn').removeClass('disable-transitions');
+                    $('#menu-btn').addClass('enable-transitions');}, 600);
+                }
+                else {
+                    $('#navbar').removeClass('enable-transitions');
+                    $('#navbar').addClass('disable-transitions');
+                    $('#home-btn').removeClass('enable-transitions');
+                    $('#home-btn').addClass('disable-transitions');
+                    $('#menu-btn').removeClass('enable-transitions');
+                    $('#menu-btn').addClass('disable-transitions');
+                    setTimeout(() => {$('#navbar')[0].offsetHeight;
+                    $('#navbar').removeClass('disable-transitions');
+                    $('#navbar').addClass('enable-transitions');
+                    $('#home-btn').removeClass('disable-transitions');
+                    $('#home-btn').addClass('enable-transitions');
+                    $('#menu-btn').removeClass('disable-transitions');
+                    $('#menu-btn').addClass('enable-transitions');}, 600);
+                }
+            }
+            var x = window.matchMedia("(max-width: 1200px)");
+            resizeWindow(x);
+            x.addListener(resizeWindow);
         </script>
         <script src="./JavaScript/main.js"></script>
     </body>
