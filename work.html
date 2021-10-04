@@ -56,11 +56,11 @@
                     $('.filter-btn').click(function(){
                         const value = $(this).attr('data-filter');
                         if (value == 'all'){
-                            $('.item-tile').show('1000');
+                            $('.item-tile').show();
                         }
                         else{
-                            $('.item-tile').not('.'+value).hide('1000');
-                            $('.item-tile').filter('.'+value).show('1000');
+                            $('.item-tile').not('.'+value).hide();
+                            $('.item-tile').filter('.'+value).show();
                         }
                     })
 
