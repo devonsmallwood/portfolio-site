@@ -112,7 +112,7 @@ body::-webkit-scrollbar {
 
 #img-me {
     width: 15rem;
-    border-radius: 100%;
+    clip-path: circle();
 }
 
 .subtitle {
