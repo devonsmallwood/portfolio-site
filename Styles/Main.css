@@ -475,6 +475,24 @@ body::-webkit-scrollbar {
     min-height: 100%;
 }
 
+#murderdave-tile {
+    /*background: url(../Images/darknoise_screenshot.png);*/
+    background-size:    cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 600ms;
+    min-height: 100%;
+}
+
+#nextduck-tile {
+    /*background: url(../Images/darknoise_screenshot.png);*/
+    background-size:    cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 600ms;
+    min-height: 100%;
+}
+
 .btn-link {
     font-size: 1rem;
     padding: 1rem;
